@@ -83,7 +83,7 @@ Install Flux and its Helm Operator by specifying your fork URL
 helm install --name flux \
 --set rbac.create=true \
 --set helmOperator.create=true \
---set git.url=git@github.com:fluxcd/helm-operator-get-started \
+--set git.url=git@github.com:sureshamk/helm-operator-get-started \
 --namespace flux \
 fluxcd/flux
 ```
@@ -185,7 +185,7 @@ metadata:
 spec:
   releaseName: podinfo-dev
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:sureshamk/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
@@ -261,7 +261,7 @@ metadata:
 spec:
   releaseName: podinfo-rc
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:sureshamk/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
@@ -314,7 +314,7 @@ metadata:
 spec:
   releaseName: podinfo-prod
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:sureshamk/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
